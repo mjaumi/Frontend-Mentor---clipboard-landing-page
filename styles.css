@@ -69,8 +69,18 @@ section {
   background-color: hsl(171, 66%, 44%);
 }
 
+.cyan-button:hover,
+.cyan-button:focus {
+  background-color: hsl(171, 66%, 55%);
+}
+
 .blue-button {
   background-color: hsl(233, 100%, 69%);
+}
+
+.blue-button:hover,
+.blue-button:focus {
+  background-color: hsl(233, 100%, 79%);
 }
 
 #snippet-section-image-container {
@@ -176,5 +186,156 @@ footer {
   padding-bottom: 5px;
 }
 .attribution a {
-  color: red;
+  color: hsl(171, 66%, 44%);
+}
+
+@media (min-width: 1200px) {
+  header {
+    background-image: url(images/bg-header-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header .section-title {
+    font-size: 44px;
+  }
+
+  header .section-text {
+    width: 50%;
+  }
+
+  .section-title {
+    font-size: 35px;
+  }
+
+  .section-text {
+    width: 55%;
+    font-size: 20px;
+  }
+
+  .button-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button {
+    width: 15%;
+  }
+
+  .button + .button {
+    margin-left: 25px;
+    margin-top: 0;
+  }
+
+  #image-tile-container {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  #snippet-section-image-container {
+    transform: translateX(-40px);
+  }
+
+  #snippet-section-image-container,
+  #snippet-section-tile-container {
+    width: 50%;
+  }
+
+  #snippet-section-tile-container {
+    margin-top: 60px;
+    padding-left: 80px;
+  }
+
+  #snippet-section-tile-container .tile-title {
+    text-align: left;
+    margin: 50px 0 0;
+  }
+
+  #snippet-section-tile-container .tile-text {
+    text-align: left;
+    margin: 18px 0 0;
+    width: 65%;
+  }
+
+  #access-section-image-container {
+    width: 70%;
+  }
+
+  #supercharge-section {
+    margin-top: 120px;
+  }
+
+  #supercharge-section-tile-container,
+  #affiliation-section,
+  #footer-data,
+  #nav-list {
+    display: flex;
+  }
+
+  .tile-title {
+    font-size: 25px;
+  }
+
+  .tile-text {
+    font-size: 20px;
+  }
+
+  #supercharge-section-tile-container .tile:first-child .tile-title {
+    margin-top: 26px;
+  }
+
+  #supercharge-section-tile-container .tile-text {
+    width: 100%;
+  }
+
+  #affiliation-section {
+    width: 90%;
+    margin: 150px auto 0;
+  }
+
+  .affiliation-logo-container {
+    width: 25%;
+  }
+
+  .affiliation-logo-container + .affiliation-logo-container {
+    margin-left: 70px;
+    margin-top: 0;
+  }
+
+  #footer-data {
+    width: 100%;
+  }
+
+  #footer-logo-container {
+    width: 5%;
+    margin: 0 120px;
+  }
+
+  #social-links-container {
+    align-self: center;
+    flex: 1;
+    padding-left: 20%;
+  }
+
+  .nav-link-separator {
+    margin-top: 20px;
+  }
+
+  .nav-link-separator + .nav-link-separator {
+    margin-left: 80px;
+  }
+
+  .nav-link-separator li {
+    text-align: left;
+  }
+
+  .attribution p {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 5px;
+    padding-bottom: 5px;
+  }
 }
